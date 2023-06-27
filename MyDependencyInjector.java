@@ -1,7 +1,7 @@
 import java.lang.reflect.Field;
 
 public class MyDependencyInjector implements DependencyInjector{
-    private Container container;
+    private final Container container;
 
     public MyDependencyInjector(Container container) {
         this.container = container;

@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Container {
-    private Map<Class<?>, Object> map;
+    private final Map<Class<?>, Object> map;
 
     public Container() {
         this.map = new HashMap<>();
