@@ -9,7 +9,9 @@ package com.lab1;
 class UserService {
     @MyInject
     private UserRepository userRepository;
-
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
     public void createUser(String username) {
         userRepository.saveUser(username);
     }
