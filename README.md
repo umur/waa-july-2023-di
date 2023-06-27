@@ -1,8 +1,8 @@
 Instructions: Your task is to create a Java application that implements a simple dependency injection framework. Follow the steps outlined below to complete the assignment.
     
 1.  Define the Classes: 
-	- Create an interface called "DependencyInjector" with a single method "void injectDependencies(Object target)". 
-	- Implement the "DependencyInjector" interface with a class called "MyDependencyInjector" that provides an implementation for the "injectDependencies" method.
+	- Create an interface called "cs545.DependencyInjector" with a single method "void injectDependencies(Object target)". 
+	- Implement the "cs545.DependencyInjector" interface with a class called "MyDependencyInjector" that provides an implementation for the "injectDependencies" method.
 2.  Implement the Dependency Injection Framework: 
 	- Create a class called "Container" that acts as the dependency injection container. 
 	- Add a private field in the "Container" class to store a mapping of dependencies. 
