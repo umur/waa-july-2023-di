@@ -1,0 +1,25 @@
+package com.waa_lab1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Container {
+    private Map<Class<?>, Object> dependencies;
+
+    public Container() {
+        dependencies = new HashMap<>();
+    }
+
+    public void registerDependency(Class<?> clazz) {
+        try {
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+            dependencies.put(clazz, instance);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Object resolveDependency(Class<?> clazz) {
+        return dependencies.get(clazz);
+    }
+}
